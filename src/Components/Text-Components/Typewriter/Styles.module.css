@@ -1,0 +1,33 @@
+.container {
+  display: inline-block;
+}
+
+.typewriter {
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  /*Make sure that the number on "steps" are the quantity number of your text. Or just remove it for other animation.*/
+  animation: typewriter 4s steps(15) alternate, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
